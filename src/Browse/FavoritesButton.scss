@@ -1,0 +1,42 @@
+.FavoritesButton {
+  background-color: #7f187f;
+  border: 1px solid #7f187f;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 12px;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: #410241
+  }
+
+  &.isLoading {
+    background-color: gray;
+    border-color: gray;
+  }
+
+  &.isAdding {
+    background-color: gray;
+    color: #7f187f;
+  }
+
+  &.isSaved {
+    background-color: #fff;
+    color: #7f187f;
+  }
+  &.isSaved:hover {
+    background-color: rgb(235, 221, 240);
+    color: #530653;
+  }
+
+  &.isConfigurable {
+    background-color: rgba(209, 214, 174, 0.3);
+    border: 1px solid rgb(43, 58, 23);
+    color: rgb(43, 58, 23);
+  }
+  &.isConfigurable:hover {
+    background-color: rgba(209, 214, 174, 1);
+    border: 1px solid rgb(43, 58, 23);
+    color: rgb(43, 58, 23);
+  }
+}
